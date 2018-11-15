@@ -1,12 +1,9 @@
-#include "gui.h"
+#include "qplayer.h"
 
 
 int main() {
-	GUI gui;
-	gui.run();
-	
-
-
+	qPlayer player;
+	player.run();
 
 	return 0;
 }
