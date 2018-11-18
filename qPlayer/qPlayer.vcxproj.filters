@@ -16,6 +16,12 @@
     <Filter Include="Pliki nagłówkowe\gui">
       <UniqueIdentifier>{3138fdb4-475b-45a2-bd8a-561776c69243}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Pliki źródłowe\gui">
+      <UniqueIdentifier>{3e7b361d-46de-4e05-bb25-fe04b6f58059}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Pliki nagłówkowe\engine">
+      <UniqueIdentifier>{8feb0be2-5316-46c1-9a97-efc50673a68e}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -24,8 +30,11 @@
     <ClCompile Include="qplayer.cpp">
       <Filter>Pliki źródłowe</Filter>
     </ClCompile>
+    <ClCompile Include="eventHandler.cpp">
+      <Filter>Pliki źródłowe\gui</Filter>
+    </ClCompile>
     <ClCompile Include="window.cpp">
-      <Filter>Pliki źródłowe</Filter>
+      <Filter>Pliki źródłowe\gui</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -36,6 +45,21 @@
       <Filter>Pliki nagłówkowe</Filter>
     </ClInclude>
     <ClInclude Include="window.h">
+      <Filter>Pliki nagłówkowe\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="eventHandler.h">
+      <Filter>Pliki nagłówkowe\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="widget.h">
+      <Filter>Pliki nagłówkowe\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="task.h">
+      <Filter>Pliki nagłówkowe\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="spriteWidget.h">
+      <Filter>Pliki nagłówkowe\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="textWidget.h">
       <Filter>Pliki nagłówkowe\gui</Filter>
     </ClInclude>
   </ItemGroup>
