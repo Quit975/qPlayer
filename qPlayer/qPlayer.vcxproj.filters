@@ -22,6 +22,9 @@
     <Filter Include="Pliki nagłówkowe\engine">
       <UniqueIdentifier>{8feb0be2-5316-46c1-9a97-efc50673a68e}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Pliki źródłowe\engine">
+      <UniqueIdentifier>{7e5b2bc3-5cbe-43ea-b7f6-f3c38128e07e}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -37,7 +40,7 @@
       <Filter>Pliki źródłowe\gui</Filter>
     </ClCompile>
     <ClCompile Include="resourceManager.cpp">
-      <Filter>Pliki źródłowe</Filter>
+      <Filter>Pliki źródłowe\engine</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
