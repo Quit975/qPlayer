@@ -130,12 +130,14 @@
     <ClCompile Include="eventHandler.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="qplayer.cpp" />
+    <ClCompile Include="resourceManager.cpp" />
     <ClCompile Include="window.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="core.h" />
     <ClInclude Include="eventHandler.h" />
     <ClInclude Include="qplayer.h" />
+    <ClInclude Include="resourceManager.h" />
     <ClInclude Include="spriteWidget.h" />
     <ClInclude Include="task.h" />
     <ClInclude Include="textWidget.h" />

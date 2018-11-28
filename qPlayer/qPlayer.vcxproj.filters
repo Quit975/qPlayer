@@ -36,6 +36,9 @@
     <ClCompile Include="window.cpp">
       <Filter>Pliki źródłowe\gui</Filter>
     </ClCompile>
+    <ClCompile Include="resourceManager.cpp">
+      <Filter>Pliki źródłowe</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="core.h">
@@ -61,6 +64,9 @@
     </ClInclude>
     <ClInclude Include="textWidget.h">
       <Filter>Pliki nagłówkowe\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="resourceManager.h">
+      <Filter>Pliki nagłówkowe\engine</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
