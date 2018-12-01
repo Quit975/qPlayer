@@ -9,11 +9,11 @@ namespace gui {
 	{
 	private:
 		sf::Vector2f m_pos;
-		Task m_task;
+		Operation m_op;
 		bool m_hover;
 
 	public:
-		Widget(sf::Vector2f pos, Task task) : m_pos{ pos }, m_task{ task }, m_hover{ false } {}
+		Widget(sf::Vector2f pos, Operation op) : m_pos{ pos }, m_op{ op }, m_hover{ false } {}
 		virtual ~Widget() {}
 
 		virtual Task click() = 0;

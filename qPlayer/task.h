@@ -1,20 +1,21 @@
 #pragma once
 #include "core.h"
 
-enum class Operation
-{
-	NO_OP
-};
-
 class Task
 {
 private:
 	Operation m_op;
-	std::string m_details;
+	union {
+		std::string m_string;
+		float m_float;
+	};
+	
 
 public:
-	Task(Operation op, std::string detail): m_op{op}, m_details{detail} {}
-	Task(Operation op): m_op{op}, m_details{""} {}
+	Task(Operation op, std::string detail): m_op{op}, m_string{detail} {}
+	Task(Operation op, float num) : m_op{ op }, m_float{ num } {}
+	Task(Operation op): m_op{op} {}
 	Operation op() { return m_op; }
-	std::string details() { return m_details; }
+	std::string desc() { return m_string; }
+	float num() { return m_float; }
 };

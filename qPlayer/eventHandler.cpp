@@ -2,10 +2,12 @@
 
 gui::EventHandler::EventHandler()
 {
+	DEBUG("Event handler created");
 }
 
 gui::EventHandler::~EventHandler()
 {
+	DEBUG("Event handler destroyed");
 }
 
 void gui::EventHandler::processEvents(sf::RenderWindow & window) const

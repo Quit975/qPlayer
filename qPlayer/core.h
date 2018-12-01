@@ -21,6 +21,16 @@ const bool debugMode = false;
 #define FAIL(x) do {std::cerr << "Op failed: " << x << std::endl;} while (false)
 #define ERR(x) do {std::cerr << "[" << __FILE__ << "][" << __FUNCTION__ << "][Line " << __LINE__ << "] " << x << std::endl;} while (false)
 
+enum class Operation
+{
+	NO_OP,
+	PLAY,
+	STOP,
+	PAUSE,
+	PREV,
+	NEXT
+};
+
 class ResourceException : public std::runtime_error {
 public:
 	ResourceException(const std::string& msg):
@@ -30,4 +40,14 @@ public:
 	ResourceException(const char * msg):
 		std::runtime_error(msg)
 	{}
+};
+
+enum class Sprite {
+	PLAY_BUTTON,
+	STOP_BUTTON,
+	PAUSE_BUTTON,
+	PREV_BUTTON,
+	NEXT_BUTTON,
+	VOL_SLIDER,
+	DISPLAY_BKGD
 };

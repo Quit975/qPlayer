@@ -134,6 +134,7 @@
     <ClCompile Include="window.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="buttonWidget.h" />
     <ClInclude Include="core.h" />
     <ClInclude Include="eventHandler.h" />
     <ClInclude Include="qplayer.h" />

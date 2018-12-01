@@ -71,5 +71,8 @@
     <ClInclude Include="resourceManager.h">
       <Filter>Pliki nagłówkowe\engine</Filter>
     </ClInclude>
+    <ClInclude Include="buttonWidget.h">
+      <Filter>Pliki nagłówkowe\gui</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

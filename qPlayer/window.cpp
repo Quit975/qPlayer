@@ -29,3 +29,9 @@ void gui::Window::draw()
 	m_window.clear();
 	m_window.display();
 }
+
+void gui::Window::buildGUI(ResourceManager & rm)
+{
+	//SpriteWidget(sf::Vector2f pos, Task task, sf::Sprite& noHover, sf::Sprite& hover, sf::Sprite& click):
+	//m_guiElements.insert(new gui::SpriteWidget(sf::Vector2f(0.f, 20.f), Task(Operation::PLAY), rm.getSprite(Sprite::PLAY_BUTTON), rm.getSprite(Sprite::PLAY_BUTTON), rm.getSprite(Sprite::PLAY_BUTTON));
+}
