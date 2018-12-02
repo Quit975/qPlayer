@@ -14,7 +14,7 @@ ResourceManager::ResourceManager()
 	m_sprites.emplace(Sprite::PREV_BUTTON, sf::Sprite(m_texture, sf::IntRect(60, 0, 20, 20)));
 	m_sprites.emplace(Sprite::NEXT_BUTTON, sf::Sprite(m_texture, sf::IntRect(80, 0, 20, 20)));
 	m_sprites.emplace(Sprite::VOL_SLIDER, sf::Sprite(m_texture, sf::IntRect(100, 0, 20, 20)));
-	m_sprites.emplace(Sprite::DISPLAY_BKGD, sf::Sprite(m_texture, sf::IntRect(0, 20, 120, 20)));
+	m_sprites.emplace(Sprite::DISPLAY_BKGD, sf::Sprite(m_texture, sf::IntRect(0, 20, 120, 40)));
 
 	DEBUG("Sprite vector populated");
 

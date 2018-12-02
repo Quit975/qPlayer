@@ -8,7 +8,7 @@ class qPlayer
 {
 private:
 	gui::Window m_window;
-	ResourceManager m_resourceManager;
+	ResourceManager m_resourceManager; 
 
 public:
 	qPlayer();

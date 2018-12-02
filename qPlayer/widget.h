@@ -5,7 +5,7 @@
 
 namespace gui {
 
-	class Widget
+	class Widget : public sf::Drawable, public sf::Transformable
 	{
 	private:
 		sf::Vector2f m_pos;
@@ -16,12 +16,13 @@ namespace gui {
 		Widget(sf::Vector2f pos, Operation op) : m_pos{ pos }, m_op{ op }, m_hover{ false } {}
 		virtual ~Widget() {}
 
-		virtual Task click() = 0;
+		virtual Task click() { return Task(m_op); }
 		sf::Vector2f pos() { return m_pos; }
 
 		void setHover(bool hov) { m_hover = hov; }
-		virtual void update() = 0;
+		virtual void update() {}
 
+		virtual void draw(sf::RenderTarget& target, sf::RenderStates states) const = 0;
 	};
 }
 

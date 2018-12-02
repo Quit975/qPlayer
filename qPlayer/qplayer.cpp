@@ -2,6 +2,7 @@
 
 qPlayer::qPlayer()
 {
+	m_window.buildGUI(m_resourceManager);
 	DEBUG("qPlayer created");
 }
 
