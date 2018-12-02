@@ -19,19 +19,15 @@ namespace gui {
 		//gui elements
 		std::vector<gui::Widget*> m_guiElements;
 
-		//flags
-		bool m_closureRequested;
-
 	public:
 		Window();
 		~Window();
 
 		//public interface
 		void processEvents();
+		Task update();
 		void draw();
 		void buildGUI(ResourceManager& rm);
-
-		//setters & getters
-		bool closureRequested() { return m_closureRequested; }
+		void close();
 	};
 }

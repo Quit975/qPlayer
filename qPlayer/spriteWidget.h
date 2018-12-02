@@ -11,8 +11,8 @@ namespace gui {
 		sf::Sprite* mp_currentSprite;
 
 	public:
-		SpriteWidget(sf::Vector2f pos, Operation op, sf::Sprite& noHover, sf::Sprite& hover, sf::Sprite& click):
-			Widget(pos, op),
+		SpriteWidget(sf::Vector2f pos, sf::Vector2f size, Operation op, sf::Sprite& noHover, sf::Sprite& hover, sf::Sprite& click):
+			Widget(pos, size, op),
 			m_sprite_noHover{noHover},
 			m_sprite_hover{hover},
 			m_sprite_click{click},
@@ -27,6 +27,15 @@ namespace gui {
 
 		virtual void draw(sf::RenderTarget& target, sf::RenderStates states) const {
 			target.draw(*mp_currentSprite);
+		}
+
+		virtual void update() {
+			if (m_hover) {
+				mp_currentSprite = &m_sprite_hover;
+			}
+			else {
+				mp_currentSprite = &m_sprite_noHover;
+			}
 		}
 	};
 }

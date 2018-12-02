@@ -1,5 +1,5 @@
 #pragma once
-
+#include <SFML/System.hpp>
 /*
 Core header defining debug values, debug utils, errors, exceptions, etc.
 qPlayer
@@ -21,6 +21,17 @@ const bool debugMode = false;
 #define FAIL(x) do {std::cerr << "Op failed: " << x << std::endl;} while (false)
 #define ERR(x) do {std::cerr << "[" << __FILE__ << "][" << __FUNCTION__ << "][Line " << __LINE__ << "] " << x << std::endl;} while (false)
 
+/////////////////////////////////// EVENT HANDLING
+enum class Event
+{
+	NO_OP,
+	CLOSE,
+	LEFT_PRESS,
+	LEFT_RELEASE,
+	RIGHT_PRESS,
+	RIGHT_RELEASE
+};
+
 enum class Operation
 {
 	NO_OP,
@@ -28,9 +39,12 @@ enum class Operation
 	STOP,
 	PAUSE,
 	PREV,
-	NEXT
+	NEXT,
+	CLOSE,
+	SEEK
 };
 
+/////////////////////////////////// EXCEPTIONS
 class ResourceException : public std::runtime_error {
 public:
 	ResourceException(const std::string& msg):
@@ -42,6 +56,18 @@ public:
 	{}
 };
 
+class EventException : public std::logic_error {
+public:
+	EventException(const std::string& msg) :
+		std::logic_error(msg)
+	{}
+
+	EventException(const char * msg) :
+		std::logic_error(msg)
+	{}
+};
+
+////////////////////////////////// RESOURCE ENUMS
 enum class Sprite {
 	PLAY_BUTTON,
 	STOP_BUTTON,

@@ -10,6 +10,12 @@ private:
 	gui::Window m_window;
 	ResourceManager m_resourceManager; 
 
+	//private interface
+	void update();
+
+	//flags
+	bool m_running;
+
 public:
 	qPlayer();
 	~qPlayer();

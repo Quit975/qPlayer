@@ -2,8 +2,14 @@
 
 
 int main() {
-	qPlayer player;
-	player.run();
+	try {
+		qPlayer player;
+		player.run();
+	}
+	catch (ResourceException& e) {
+		std::cerr << e.what() << std::endl;
+	}
+	
 
 	return 0;
 }
