@@ -25,6 +25,12 @@
     <Filter Include="Pliki źródłowe\engine">
       <UniqueIdentifier>{7e5b2bc3-5cbe-43ea-b7f6-f3c38128e07e}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Pliki nagłówkowe\player">
+      <UniqueIdentifier>{ca7a37ec-e3c8-4f7a-b741-79bb71847b8d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Pliki źródłowe\player">
+      <UniqueIdentifier>{5ad8a7de-09ba-44bc-bb95-d7273a66aa6c}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -41,6 +47,9 @@
     </ClCompile>
     <ClCompile Include="resourceManager.cpp">
       <Filter>Pliki źródłowe\engine</Filter>
+    </ClCompile>
+    <ClCompile Include="musicPlayer.cpp">
+      <Filter>Pliki źródłowe\player</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -70,6 +79,9 @@
     </ClInclude>
     <ClInclude Include="resourceManager.h">
       <Filter>Pliki nagłówkowe\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="musicPlayer.h">
+      <Filter>Pliki nagłówkowe\player</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

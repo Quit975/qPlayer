@@ -34,22 +34,27 @@ void qPlayer::update()
 	switch (e.op()) {
 	case Operation::PLAY:
 		DEBUG("Play button pressed");
+		m_player.play();
 		break;
 
 	case Operation::PAUSE:
 		DEBUG("Pause button pressed");
+		m_player.pause();
 		break;
 
 	case Operation::STOP:
 		DEBUG("Stop button pressed");
+		m_player.stop();
 		break;
 
 	case Operation::PREV:
 		DEBUG("Prev button pressed");
+		m_player.prev();
 		break;
 
 	case Operation::NEXT:
 		DEBUG("Next button pressed");
+		m_player.next();
 		break;
 
 	case Operation::CLOSE:
